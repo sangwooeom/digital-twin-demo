@@ -1,0 +1,148 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 100%;
+  background-color: var(--bg-secondary);
+  border-left: 1px solid var(--border-color);
+  overflow-y: auto;
+}
+
+.dashboard-title {
+  padding: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* BuildingInfo */
+.building-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 48px 16px;
+  color: var(--text-muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+.building-empty-icon {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.building-info {
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.building-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.building-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.stat-label {
+  color: var(--text-muted);
+}
+
+.stat-value {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.building-sensors {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sensor-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background-color: var(--bg-panel);
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.sensor-icon {
+  font-size: 16px;
+}
+
+.sensor-label {
+  flex: 1;
+  color: var(--text-secondary);
+}
+
+.sensor-value {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.sensor-value.warning {
+  color: var(--warning);
+}
+
+.sensor-value.success {
+  color: var(--success);
+}
+
+/* SensorChart */
+.sensor-chart {
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.chart-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.chart-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.chart-tab {
+  padding: 4px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.chart-tab.active {
+  background-color: var(--accent-blue);
+  border-color: var(--accent-blue);
+  color: white;
+}
